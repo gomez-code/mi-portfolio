@@ -132,23 +132,32 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    .iconos1{
-      display: flex;
-      justify-content: center;   
-      img{
-        width: 150px;
-        height: 150px;
-        padding: 20px;
-    }
-  }
+    justify-content: center;    
 } 
 
 #seccion2{
+  display: block;
   padding: 50px;
-
+  @media (max-width: 992px){
+    padding: 0px;
+  }
 }
- 
+
+.iconos1{
+  display: flex;
+  justify-content: center;   
+  img{
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    display: flex;
+   }
+}
+@media (max-width: 992px){.iconos1{
+  flex-wrap:wrap;
+  
+}
+}
 //npm init
 //sass --watch scss/style.scss css/style.css//
 

@@ -140,18 +140,32 @@ section {
   align-items: center;
   justify-content: center;
 }
-section .iconos1 {
+
+#seccion2 {
+  display: block;
+  padding: 50px;
+}
+@media (max-width: 992px) {
+  #seccion2 {
+    padding: 0px;
+  }
+}
+
+.iconos1 {
   display: flex;
   justify-content: center;
 }
-section .iconos1 img {
+.iconos1 img {
   width: 150px;
   height: 150px;
   padding: 20px;
+  display: flex;
 }
 
-#seccion2 {
-  padding: 50px;
+@media (max-width: 992px) {
+  .iconos1 {
+    flex-wrap: wrap;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
