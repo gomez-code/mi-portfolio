@@ -10,13 +10,13 @@ header {
     background-position: center;
     height: 500px;
     @media (max-width: 991px) {
-        height: 455px;;
+        height: 455px;
     }
 } 
 
  nav {
         //background-color: rgba(8, 3, 3, 80%);
-        background-image: linear-gradient(to top, rgba(194, 189, 189, 0.542), rgba(8, 3, 3, 0.99));
+        background-image: linear-gradient(to top, rgba(194, 189, 189, 0.542), rgba(12, 29, 34, 0.99));
         position:fixed;
         top: 1px;
         width: 100%;
@@ -46,6 +46,7 @@ header {
                     background-color: azure;
                     color: black;
                     border-radius: 10%;
+                    mix-blend-mode: difference;
               }
             }
           }
@@ -72,35 +73,46 @@ header {
     @media (max-width: 991px) {
            flex-direction: column;
            height: 455px;
+           padding-top: 60px;
     }
   }
   .mi-foto{
     border-radius: 50%;
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     overflow: hidden;
     display: block;
     align-items: center;
     padding-right: 100px;
     img{
-        height: 200px;
-        width: 200px;
+        height: 250px;
+        width: 250px;
         position: relative;
    
     }
 }
-h1{
+.saludo-a{
     font-size: 50px;
     color: azure;
-    padding: 50px 0px 50px 50px;
+    text-align: right;
+    padding: 50px 0px 0px 50px;
     @media (max-width: 992px) {
         padding: 20px;
         text-align: center;
     }
 }
-#perfil{
-  display: flex;
-
+.saludo-b{
+  font-size: 70px;
+  color: azure;
+  padding: 10px 0px 50px 50px;
+  @media (max-width: 992px) {
+      padding: 20px;
+      text-align: center;
+  }
+}
+.titulo-sec{
+  text-align: center;
+  padding-bottom: 10px;
 }
 p{
   font-size: 20px;
@@ -108,11 +120,29 @@ p{
 }
 
 
-  section {
+section {
+    width: 100%;
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .iconos1{
+      display: flex;
+      justify-content: center;   
+      img{
+        width: 150px;
+        height: 150px;
+        padding: 20px;
+    }
   }
+} 
 
+#seccion2{
+  padding: 50px;
+
+}
  
 //npm init
 //sass --watch scss/style.scss css/style.css//

@@ -19,7 +19,7 @@ header {
 }
 
 nav {
-  background-image: linear-gradient(to top, rgba(194, 189, 189, 0.542), rgba(8, 3, 3, 0.99));
+  background-image: linear-gradient(to top, rgba(194, 189, 189, 0.542), rgba(12, 29, 34, 0.99));
   position: fixed;
   top: 1px;
   width: 100%;
@@ -51,6 +51,7 @@ nav ul li a:hover {
   background-color: azure;
   color: black;
   border-radius: 10%;
+  mix-blend-mode: difference;
 }
 
 @media (min-width: 992px) {
@@ -73,38 +74,53 @@ nav ul li a:hover {
   .nombre {
     flex-direction: column;
     height: 455px;
+    padding-top: 60px;
   }
 }
 
 .mi-foto {
   border-radius: 50%;
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   overflow: hidden;
   display: block;
   align-items: center;
   padding-right: 100px;
 }
 .mi-foto img {
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   position: relative;
 }
 
-h1 {
+.saludo-a {
   font-size: 50px;
   color: azure;
-  padding: 50px 0px 50px 50px;
+  text-align: right;
+  padding: 50px 0px 0px 50px;
 }
 @media (max-width: 992px) {
-  h1 {
+  .saludo-a {
     padding: 20px;
     text-align: center;
   }
 }
 
-#perfil {
-  display: flex;
+.saludo-b {
+  font-size: 70px;
+  color: azure;
+  padding: 10px 0px 50px 50px;
+}
+@media (max-width: 992px) {
+  .saludo-b {
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+.titulo-sec {
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 p {
@@ -113,8 +129,26 @@ p {
 }
 
 section {
+  width: 100%;
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section .iconos1 {
+  display: flex;
+  justify-content: center;
+}
+section .iconos1 img {
+  width: 150px;
+  height: 150px;
+  padding: 20px;
+}
+
+#seccion2 {
+  padding: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
