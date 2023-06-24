@@ -2,15 +2,19 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+body{
+  background-color:#87fb5d1f ;
 }
 header {
     background-image: url(../Captura\ de\ Pantalla\ 2023-06-05\ a\ la\(s\)\ 16.40.12.png);
     background-size: cover;
     background-position: center;
-    height: 500px;
+    height: fit-content;
     @media (max-width: 991px) {
-        height: 600px;
+        //height: fit-content;
+        padding-top: 20px;
     }
 } 
 
@@ -69,7 +73,7 @@ header {
     width: 100%;
     height:500px;
     margin-top: 0;
-    background-color: rgba(8, 3, 3, 50%);
+    background-color: rgba(12, 29, 34, 50%);
     @media (max-width: 991px) {
            flex-direction: column;
            height: fit-content;
@@ -78,36 +82,36 @@ header {
   }
   .mi-foto{
     border-radius: 50%;
-    height: 250px;
-    width: 250px;
+    height: 240px;
+    width: 240px;
     overflow: hidden;
     display: block;
     align-items: center;
     padding-right: 100px;
+    margin: 40px;
        img{
-           height: 250px;
-           width: 250px;
+           height: 240px;
+           width: 240px;
            position: relative; 
      } 
   }
 
 
 .saludo-a{
-    font-size: 50px;
+    font-size: 45px;
     color: azure;
     text-align: right;
     align-items:baseline;
-    padding-top: 50px;
+    padding-top: 80px;
     //padding: 50px 0px 0px 50px;
-    margin-bottom: 0%;
     @media (max-width: 992px) {
-        padding-top: 10px;
+        padding-top: 120px;
         padding-bottom: 0%;
         text-align: center;
     }
 }
 .saludo-b{
-  font-size: 70px;
+  font-size: 55px;
   color: azure;
   padding: 0px 0px 50px 50px;
   @media (max-width: 992px) {
@@ -121,13 +125,13 @@ header {
 }
 p{
   font-size: 20px;
-  text-align: justify;
+  //text-align: center;
 }
 
 
 section {
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     margin-bottom: 50px;
     display: flex;
     flex-direction: column;
@@ -137,7 +141,8 @@ section {
 
 #seccion2{
   display: block;
-  padding: 50px;
+  padding: 30px;
+  margin-top: 80px;
   @media (max-width: 992px){
     padding: 0px;
   }
@@ -153,11 +158,107 @@ section {
     display: flex;
    }
 }
-@media (max-width: 992px){.iconos1{
-  flex-wrap:wrap;
+@media (max-width: 992px){
+  .iconos1{
+  flex-wrap:wrap; 
+}
+}
+
+
+
+
+#seccion3 {
+  //text-align: center;
+  text-align: left;
+  height: fit-content;
+  margin-top: 100px;
+
+  h2 {
+    margin-top: 0;
+    padding-bottom: 30px;
+    text-align: left;
+  }
+
+  .exp1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 5px solid rgba(19, 17, 17, 0.057);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+
+      .logo-flash {
+        justify-items: center;
+       // padding-left: 50px;
+      }
+   }
+ }
+}
+.texto-experiencia {
+  flex: 1;
+  text-align: left;
+  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 80px;
+  height: fit-content;
+  @media (max-width: 992px){
+    padding-left: 20px;
+  }
+}
+
+
+
+.exp2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 5px solid rgba(19, 17, 17, 0.057);
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+  }
+
+  .logo-geese {
+    border-radius: 50%;
+    height: 130px;
+    width: 270px;
+    background-color: #d6d4d4;
+    overflow: hidden;
+    margin: 10px;
+    margin-right: 50ps;
+  }
+
+  img {
+    margin: 0px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 7px;
+    width: fit-content;
+    height: 80px;
+  }
+
+  .texto-experiencia-2 {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    height: fit-content;
+    @media (max-width: 992px){
+      padding-left: 20px;
+    }
+  }
+}
+
   
-}
-}
 //npm init
 //sass --watch scss/style.scss css/style.css//
 
