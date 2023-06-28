@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: rgba(135, 251, 93, 0.1215686275);
+  background: linear-gradient(to right, rgb(115, 115, 209), rgba(255, 255, 255, 0.821));
 }
 
 header {
@@ -145,6 +145,10 @@ section {
   justify-content: center;
 }
 
+.custom-bg-gradient {
+  background: linear-gradient(to right, #f9f3f3, rgba(173, 216, 245, 0.6784313725));
+}
+
 #seccion2 {
   display: block;
   padding: 30px;
@@ -190,6 +194,7 @@ section {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: left;
+  background: linear-gradient(to left, rgb(162, 162, 251), rgba(255, 255, 255, 0.821));
 }
 @media (max-width: 992px) {
   #seccion3 .exp1 {
@@ -223,6 +228,7 @@ section {
   padding-top: 20px;
   padding-bottom: 20px;
   margin-top: 10px;
+  background: linear-gradient(to right, rgb(162, 162, 251), rgba(255, 255, 255, 0.821));
 }
 @media (max-width: 992px) {
   .exp2 {
@@ -259,6 +265,50 @@ section {
   .exp2 .texto-experiencia-2 {
     padding-left: 20px;
   }
+}
+
+.ed-1 {
+  display: flex;
+  margin-top: 80px;
+  align-items: center;
+}
+.ed-1 .texto-sicos {
+  font-size: 25px;
+  padding: 30px;
+}
+
+.ed-2 {
+  display: flex;
+  align-items: center;
+}
+.ed-2 .texto-coder {
+  font-size: 25px;
+  padding: 30px;
+}
+
+.ed-3 {
+  display: flex;
+  align-items: center;
+}
+.ed-3 .texto-schneider {
+  font-size: 25px;
+  padding: 30px;
+}
+
+.ed-4 {
+  display: flex;
+  align-items: flex-start;
+}
+.ed-4 .texto-acyede {
+  font-size: 25px;
+  padding-left: 30px;
+  text-align: start;
+}
+
+.texto-acyede-2 {
+  font-size: 25px;
+  padding-left: 30px;
+  text-align: start;
 }
 
 /*# sourceMappingURL=style.css.map */
