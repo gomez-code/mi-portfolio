@@ -184,6 +184,8 @@ section {
   text-align: left;
   height: fit-content;
   margin-top: 100px;
+  width: 95%;
+  margin: auto;
 }
 #seccion3 h2 {
   margin-top: 0;
