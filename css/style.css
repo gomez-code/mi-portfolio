@@ -15,6 +15,7 @@ header {
   background-size: cover;
   background-position: center;
   height: fit-content;
+  background-repeat: no-repeat;
 }
 @media (max-width: 991px) {
   header {
