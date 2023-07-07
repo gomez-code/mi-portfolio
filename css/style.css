@@ -8,6 +8,7 @@
 
 body {
   background: linear-gradient(to right, rgb(115, 115, 209), rgba(255, 255, 255, 0.821));
+  background-repeat: no-repeat;
 }
 
 header {
