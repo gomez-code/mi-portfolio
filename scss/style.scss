@@ -8,6 +8,10 @@ body{
   //background-color:#87fb5d15 ;
   background: linear-gradient(to right, rgb(115, 115, 209) , rgba(255, 255, 255, 0.821));
   background-repeat: no-repeat;
+  background-size:contain;
+  @media (max-width: 991px) {
+    width: 100%;
+}
 }
 header {
     background-image: url(../Captura\ de\ Pantalla\ 2023-06-05\ a\ la\(s\)\ 16.40.12.png);
@@ -67,6 +71,9 @@ header {
           display: none;
         }
       }
+#nav-bootstrap{
+  flex-wrap: nowrap;
+}
 
   .nombre{
     display:flex;
