@@ -73,7 +73,10 @@ nav ul li a:hover {
   }
 }
 #nav-bootstrap {
-  flex-wrap: nowrap;
+  position: absolute;
+}
+#nav-bootstrap #offcanvasDarkNavbar {
+  width: 40%;
 }
 
 .nombre {

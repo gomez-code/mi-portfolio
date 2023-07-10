@@ -71,9 +71,14 @@ header {
           display: none;
         }
       }
-#nav-bootstrap{
-  flex-wrap: nowrap;
-}
+
+  #nav-bootstrap {
+    position: absolute;
+    #offcanvasDarkNavbar{
+      width: 40%;
+    }
+    
+  }
 
   .nombre{
     display:flex;
